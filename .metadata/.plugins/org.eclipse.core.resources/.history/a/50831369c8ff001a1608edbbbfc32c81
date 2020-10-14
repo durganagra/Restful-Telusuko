@@ -1,0 +1,17 @@
+package com.telusuko.reststart;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("aliens")
+public class AlienResource {
+	@GET
+	public Alien getalien() {
+		System.out.println("alien called");
+		Alien a1 =new Alien();
+		a1.setName("Durga");
+		a1.setPoints(10);
+		return a1;
+	}
+
+}

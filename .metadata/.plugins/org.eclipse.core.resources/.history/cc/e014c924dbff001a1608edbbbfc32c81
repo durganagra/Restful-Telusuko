@@ -1,0 +1,29 @@
+package com.telusuko.reststart;
+
+import java.util.List;
+
+public class AlienRepository {
+	List<Alien> aliens;
+	public AlienRepository() {
+		Alien a1 =new Alien();
+		Alien a2 =new Alien();
+		a1.setName("Naga");
+		a1.setPoints(10);
+		a2.setName("Durga");
+		a2.setPoints(20);
+		aliens.add(a1);
+		aliens.add(a2);
+	}
+ public List<Alien> getAliens(){
+	 return aliens;
+ }
+ public Alien getAlien(int id) {
+	 Alien a1= null;
+	 for(Alien a :aliens) {
+		 if(a.getId()==id) {
+			 return null;
+		 }
+		 return null;
+	 }
+ }
+}
